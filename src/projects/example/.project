@@ -1,0 +1,19 @@
+{
+  "name":"example",
+  "formats":[
+    {
+      "type":"book",
+      "languages":[
+        "en",
+        "fr"
+      ]
+    },
+    {
+      "type":"website",
+      "languages":[
+        "en",
+        "fr"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+.webpage__body {
+  background: white;
+  padding: 2rem;
+  max-width: 45rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2rem 0 0 0;
+  grid-column: 1;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  ol,
+  .panel,
+  .page {
+    margin-bottom: 0;
+
+    + * {
+      margin-top: 1rem;
+    }
+
+    + h3 {
+      margin-top: 2rem;
+    }
+
+    + h4 {
+      margin-top: 1.5rem;
+    }
+  }
+
+  * + .panel {
+    margin-top: 2rem;
+  }
+
+  .panel + .panel {
+    margin-top: 1rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $font-body-serif-title;
+    line-height: 1.2;
+    font-weight: 500;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.25rem solid #9b0d0d;
+    line-height: 3rem;
+    font-weight: bold;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 7rem;
+      margin-top: -7rem;
+      visibility: hidden;
+    }
+
+    + h2::before {
+      margin-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 5rem;
+      margin-top: -3rem;
+      border-bottom: 1px dotted rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    border-bottom: 1px dotted rgba(0,0,0,0.1);
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 7rem;
+      margin-top: -7rem;
+      visibility: hidden;
+    }
+
+    .h3__highlight {
+      background: #9b0d0d;
+      border-radius: 1cm;
+      width: 2rem;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    + * {
+      margin-top: 0.5rem;
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+
+    + * {
+      margin-top: 0;
+    }
+
+    &.h4--option{
+      position: relative;
+      padding-left: 1.5em;
+
+      &::before {
+        content: '';
+        border: 3px solid #9b0d0d;
+        display: inline-block;
+        height: 0.75em;
+        width: 0.75em;
+        position: absolute;
+        left: 0.2em;
+        top: 0.2em;
+        box-sizing: border-box;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  p + p {
+    margin-top: 0;
+    text-indent: 2rem;
+  }
+
+  pre {
+    overflow: auto;
+  }
+}

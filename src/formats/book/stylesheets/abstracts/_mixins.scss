@@ -1,0 +1,13 @@
+// Common book mixins
+
+@mixin page($page-height, $page-width) {
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-sizing: border-box;
+	display: inline-block;
+	height: $page-height;
+	overflow: hidden;
+	position: relative;
+	width: $page-width;
+}

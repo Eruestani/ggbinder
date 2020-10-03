@@ -1,0 +1,24 @@
+{
+	"output":{
+		"filename":"example"
+	},
+	"contents":[
+		{
+			"type":"SECTION",
+			"chapters":[
+				{
+					"filename":"page01",
+					"title":"Page 01",
+					"id":"page-01",
+					"description":"Example page 1."
+				},
+				{
+					"filename":"page02",
+					"title":"Page 02",
+					"id":"page-02",
+					"description":"Example page 2."
+				}
+			]
+		}
+	]
+}

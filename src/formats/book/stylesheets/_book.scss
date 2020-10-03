@@ -1,0 +1,12 @@
+// Common book modules
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+// Common book partials
+
+@import 'base/reset';
+@import 'components/book';
+@import 'components/page';
+@import 'pages/page--generic';
+@import 'utilities/print';

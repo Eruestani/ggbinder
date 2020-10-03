@@ -1,0 +1,32 @@
+// Common book base elements
+
+$html--bg: #494d50;
+
+html {
+	background: $html--bg;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+ol,
+p,
+ul {
+	margin: 0;
+}
+
+* > :first-child {
+	margin-top: 0;
+}
+
+* > :last-child {
+	margin-bottom: 0;
+}

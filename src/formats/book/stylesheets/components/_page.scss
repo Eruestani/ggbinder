@@ -1,0 +1,13 @@
+// Styles for book pages.
+
+$page--column-gap: 36px;
+
+.page {
+	position: relative;
+	line-height: 15px;
+	column-count: 2;
+	column-gap: $page--column-gap;
+	column-fill: auto;
+	font-family: $font-body-serif;
+	font-size: 11px;
+}

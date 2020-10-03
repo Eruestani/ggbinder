@@ -1,0 +1,173 @@
+// Styles for generic pages.
+
+
+
+.page--generic {
+	padding: (floor($page--padding--height * 0.9)) $page--padding--width (ceil($page--padding--height * 1.1));
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: $font-body-serif-title;
+	}
+
+	h1 {
+		column-span: all;
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+		align-items: center;
+		line-height: 30px;
+		position: relative;
+		padding-bottom: ($page--spacing * 2);
+	}
+
+	h2 {
+		font-size: 35px;
+		font-weight: bold;
+		position: relative;
+		line-height: 30px;
+		margin-bottom: $page--spacing;
+	}
+
+	h3 {
+		font-size: 22px;
+		line-height: 15px;
+		font-weight: bold;
+		padding-bottom: $page--spacing - 8px; 
+		margin-bottom: $page--spacing - 9px;
+		border-bottom: 2px solid rgba(black, 0.1);
+	}
+
+	h4 {
+		font-size: 16px;
+		line-height: 15px;
+		position: relative;
+		font-weight: bold;
+		margin-bottom: $page--spacing;
+	}
+
+	h5 {
+		margin: 0;
+		font-size: 13px;
+		line-height: 15px;
+	}
+
+	h6 {
+		margin-bottom: 15px;
+	}
+
+	p {
+
+		+ * {
+			margin-top: $page--spacing;
+		}
+
+		+ p {
+			margin-top: 0;
+			text-indent: $page--spacing;
+		}
+
+		sup {
+			vertical-align: text-top;
+		}
+
+		sub { 
+			vertical-align: text-bottom;
+		}
+
+		small {
+			vertical-align: bottom;
+			position: relative;
+			top: 1px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		position: relative;
+
+		li::before {
+			content: '\2022';
+			left: 0;
+			position: absolute;
+		}
+	}
+
+	ul,
+	ol {
+		padding-left: $page--spacing;
+
+		+ * {
+			margin-top: $page--spacing;
+		}
+
+		+ p {
+			text-indent: 15px;
+		}
+	}
+
+	col-break {
+		-webkit-column-break-after: always;
+		break-after: column;
+		display: block;
+		margin: -1px 0 0 !important;
+
+		+ * {
+			margin-top: 0;
+		}
+
+		~ h2::after {
+			transform: scaleX(-1);
+			left: 0;
+		}
+	}
+
+	table {
+		font-size: inherit;
+		width: 100%;
+		border-collapse: collapse;
+
+		+ * {
+			margin-top: $page--spacing;
+		}
+
+		th,
+		td {
+			line-height: 13px;
+		}
+	}
+
+	hr {
+		margin: $page--spacing 0 ($page--spacing - 1px);
+		border: 0;
+		border-bottom: 1px solid rgba(black, 0.1);
+	}
+
+	blockquote,
+	pre {
+		background: rgba(black, 0.1);
+		border-radius: 0.5rem;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+		padding: $page--spacing;
+		white-space: inherit;
+
+		footer {
+			text-align: right;
+		}
+
+		+ * {
+			margin-top: $page--spacing;
+		}
+	}
+
+	pre {
+		font-family: 'Courier New';
+		line-height: 15px;
+	}
+}

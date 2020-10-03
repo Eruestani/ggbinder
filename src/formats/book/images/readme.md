@@ -1,0 +1,1 @@
+Common book images go here.

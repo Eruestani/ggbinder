@@ -1,0 +1,1 @@
+Common website images go here.
