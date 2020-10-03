@@ -2,13 +2,14 @@
 
 A toolset to turn html files into books/websites/whatever you fancy. This is a light-weight example of the tool I use to write my documents in—[Giffyglyph's Darker Dungeons](https://giffyglyph.com/darkerdungeons) / [Monster Maker](https://giffyglyph.com/monstermaker) / [Class Compendium](https://giffyglyph.com/classcompendium) / etc.
 
-* Create your own project folder.
-* Add html fragments and use a collection file to bind them into books/websites.
+* Create your own projects in the src/projects folder.
+* Add html fragments and bind them into books/websites with a collection file.
 * Use custom CSS and JS scripts to transform the look of your html.
+* Add images and custom fonts as needed.
 
 ## Requirements
 
-1. Node.js (https://nodejs.org/en/).
+1. [Node.js](https://nodejs.org/en/)
 
 ## Instructions
 
@@ -21,3 +22,7 @@ A toolset to turn html files into books/websites/whatever you fancy. This is a l
 2. gulp build-and-watch
 3. gulp build-book-pdfs
 4. gulp build-book-pngs
+
+### License
+
+[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
